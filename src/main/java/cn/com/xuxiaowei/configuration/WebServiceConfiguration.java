@@ -27,7 +27,7 @@ public class WebServiceConfiguration {
 
     @Bean
     public Endpoint userWebServiceEndpoint() {
-        EndpointImpl endpoint = new EndpointImpl(BindingID.SOAP12_HTTP, userService);
+        EndpointImpl endpoint = new EndpointImpl(BindingID.SOAP11_HTTP, userService);
         // 仅监听 127.0.0.1
         // endpoint.publish("http://127.0.0.1:8081/ws/userService");
         // 监听所有地址
