@@ -19,6 +19,27 @@
     <dependencies>
 
 
+        <!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-frontend-jaxws -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxws</artifactId>
+            <version>3.5.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-transports-http -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http</artifactId>
+            <version>3.5.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-features-logging -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-features-logging</artifactId>
+            <version>3.5.0</version>
+            <!--<scope>test</scope>-->
+        </dependency>
+
+
         <!-- XML Bean 转化工具 -->
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
         <dependency>
