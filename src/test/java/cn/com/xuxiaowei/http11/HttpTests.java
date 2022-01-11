@@ -80,7 +80,7 @@ class HttpTests {
 
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.setContentType(MediaType.parseMediaType("application/soap+xml"));
+        httpHeaders.setContentType(MediaType.TEXT_XML);
         HttpEntity<String> httpEntity = new HttpEntity<>(envelopeXml, httpHeaders);
 
         ResponseEntity<String> responseEntity = restTemplate.postForEntity("http://127.0.0.1:8081/ws/userService",
